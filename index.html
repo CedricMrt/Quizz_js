@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        <span>Quizz</span> Culture générale.
+        <img class="checkBox" src="./checkbox.png" alt="checkbox" />
+      </h1>
+      <form class="quiz">
+        <div class="question">
+          <h2>Qui est sacré empereur de France le 2 décembre 1804 ?</h2>
+          <div class="answer">
+            <input
+              type="radio"
+              name="firstQuestion"
+              id="clovis"
+              value="a"
+              checked
+            />
+            Clovis
+          </div>
+          <div class="answer">
+            <input type="radio" name="firstQuestion" id="lincoln" value="b" />
+            Abraham Lincoln
+          </div>
+          <div class="answer">
+            <input type="radio" name="firstQuestion" id="napoleon" value="c" />
+            Napoléon bonaparte
+          </div>
+        </div>
+        <div class="question">
+          <h2>
+            Quand la déclaration d'indépendence des Etats-Unis a-t-elle été
+            votée ?
+          </h2>
+          <div class="answer">
+            <input
+              type="radio"
+              name="secondQuestion"
+              id="juillet"
+              value="a"
+              checked
+            />
+            4 juillet 1776
+          </div>
+          <div class="answer">
+            <input type="radio" name="secondQuestion" id="avril" value="b" /> 18
+            avril 1856
+          </div>
+          <div class="answer">
+            <input type="radio" name="secondQuestion" id="juin" value="c" /> 30
+            juin 1925
+          </div>
+        </div>
+        <div class="question">
+          <h2>Quand a eu lieu la chute de l'empire romain d'occident ?</h2>
+          <div class="answer">
+            <input
+              type="radio"
+              name="thirdQuestion"
+              id="15"
+              value="a"
+              checked
+            />
+            15 ap.j.-C.
+          </div>
+          <div class="answer">
+            <input type="radio" name="thirdQuestion" id="476" value="b" /> 476
+            ap.j.-C.
+          </div>
+          <div class="answer">
+            <input type="radio" name="thirdQuestion" id="740" value="c" /> -740
+            av.j.-C.
+          </div>
+        </div>
+        <div class="question">
+          <h2>Quelle est la capitale de la Slovénie ?</h2>
+          <div class="answer">
+            <input
+              type="radio"
+              name="fourthQuestion"
+              id="ljubljana"
+              value="a"
+              checked
+            />
+            Ljubljana
+          </div>
+          <div class="answer">
+            <input type="radio" name="fourthQuestion" id="belgrade" value="b" />
+            Belgrade
+          </div>
+          <div class="answer">
+            <input
+              type="radio"
+              name="fourthQuestion"
+              id="bratislava"
+              value="c"
+            />
+            Bratislava
+          </div>
+        </div>
+        <div class="question">
+          <h2>Combien d'habitants compte l'irlande en 2020 ?</h2>
+          <div class="answer">
+            <input type="radio" name="fifthQuestion" id="1" value="a" checked />
+            1,365 Million
+          </div>
+          <div class="answer">
+            <input type="radio" name="fifthQuestion" id="21" value="b" /> 21
+            Millions
+          </div>
+          <div class="answer">
+            <input type="radio" name="fifthQuestion" id="4" value="c" /> 4,9
+            Millions
+          </div>
+        </div>
+        <button type="submit">
+          Valider <img class="check" src="./check.png" alt="check" />
+        </button>
+      </form>
+      <div class="result">
+        <h4>
+          Cliquez sur <span>valider</span> pour voir les <span>résultats.</span>
+        </h4>
+        <p class="mark"></p>
+        <p class="help"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
